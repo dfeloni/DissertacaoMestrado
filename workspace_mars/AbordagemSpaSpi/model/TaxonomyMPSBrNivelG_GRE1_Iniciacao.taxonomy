@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<txn:Taxonomy xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:txn="platform:/resource/TaxonomyModel/model" name="MPS.Br Nível G - GRE" description="Utilizada para definição de conceitos presentes no processo de Gerência de Requisitos para o modelo MPS.Br no nível G de maturidade.">
+  <definedBy name="requisito" description="Define uma solicitação de usuário que deverá ser implementada nos produtos de software.">
+    <appliesTo name="solicitação" description=""/>
+    <appliesTo name="funcionalidade"/>
+    <appliesTo name="requisito de usuário"/>
+    <appliesTo name="requisito de sistema"/>
+    <appliesTo name="requisito funcional"/>
+    <appliesTo name="requisito não funcional"/>
+  </definedBy>
+  <definedBy name="fornecedor" description="">
+    <appliesTo name="usuário"/>
+    <appliesTo name="cliente"/>
+    <appliesTo name="patrocinador"/>
+    <appliesTo name="sponsor" description="Termo patrocinador em inglês."/>
+    <appliesTo name="stakeholder" description="Outra variação para o patrocinador do projeto, termo em inglês."/>
+  </definedBy>
+</txn:Taxonomy>

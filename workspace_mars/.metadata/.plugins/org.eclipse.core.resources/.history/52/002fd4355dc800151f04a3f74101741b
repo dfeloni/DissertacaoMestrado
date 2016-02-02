@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct:Phase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:struct="platform:/resource/StructureAndBehaviorModel/model" name="Iniciação do projeto" description="Fase do processo responsável pela coleta inicial dos requisitos e definição do escopo do projeto.">
+  <defines name="Coletar requisitos" description="Realizar reuniões e entrevistas com os fornecedores de requisitos para coletar as necessidades do usuários e sugerir possibilidades de emplementação nos produtos de software da empresa." objective="Coletar os requisitos de usuário para levantamento dos requisitos de sistema a serem desenvolvidos.">
+    <executes description="1 - Agendar entrevista com usuários" number="1" complementaryDescription="Nesta atividade será agendada uma reunião para realizar a coleta dos requisitos com os fornecedores/usuários."/>
+    <executes description="2 - Documentar resultado da reunião e obter o aceite dos fornecedores em relação às definições iniciais do escopo do projeto." number="2"/>
+    <executes description="3 - Obter aprovação do documento de declaração de escopo elaborado." number="3" complementaryDescription="O documento de declaração de escopo elaborado deverá passar por aprovação por parte dos fornecedores de requisitos, indicando o aceito das definições realizadas para o projeto."/>
+    <input name="Documento de levantamento de requisitos"/>
+    <output name="Declaração de escopo do projeto"/>
+  </defines>
+</struct:Phase>

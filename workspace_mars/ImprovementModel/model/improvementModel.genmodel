@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ImprovementModel/src" modelPluginID="ImprovementModel"
+    modelName="ImprovementModel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>improvementModel.ecore</foreignModel>
+  <genPackages prefix="Improvement" disposableProviderFactory="true" ecorePackage="improvementModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="improvementModel.ecore#//FeedbackType">
+      <genEnumLiterals ecoreEnumLiteral="improvementModel.ecore#//FeedbackType/NEGATIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="improvementModel.ecore#//FeedbackType/NEUTRAL"/>
+      <genEnumLiterals ecoreEnumLiteral="improvementModel.ecore#//FeedbackType/POSITIVE"/>
+    </genEnums>
+    <genClasses ecoreClass="improvementModel.ecore#//ImprovementHint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute improvementModel.ecore#//ImprovementHint/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute improvementModel.ecore#//ImprovementHint/example"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute improvementModel.ecore#//ImprovementHint/exampleFile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference improvementModel.ecore#//ImprovementHint/commented"/>
+    </genClasses>
+    <genClasses ecoreClass="improvementModel.ecore#//HintComments">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute improvementModel.ecore#//HintComments/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute improvementModel.ecore#//HintComments/feedbackType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

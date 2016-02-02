@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.usp.efs.mef&apos; to &apos;br.usp.efs.fsm&apos;&#x0A;- Original project: &apos;Trabalho3_EMF&apos;&#x0A;- Original element: &apos;Trabalho3_EMF/src/br.usp.efs.mef&apos;&#x0A;- Renamed element: &apos;Trabalho3_EMF/src/br.usp.efs.fsm&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.usp.efs.mef&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;br.usp.efs.mef" name="br.usp.efs.fsm" qualified="false" references="true" stamp="1449359394040" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asmnt:ExecutedAssessment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:asmnt="platform:/resource/AssessmentModel/model" name="Avaliação de Conformidade - MPS.Br - Nível G - GRE1" description="Avaliação baseada em questionário para avaliar o resultado de processo GRE1." maturityModel="Melhoria de Processo de Software Brasileiro" process="Processo Gerência de Requisitos - MPS.Br - Nível G">
+  <performSubjectiveEvaluation name="Avaliação baseada em questionário" description="Disponibiliza questões com o intuito de avaliar um requisito de modelo de maturidade.">
+    <organizes name="Avaliação requisito GRE1 do processo Gerência de Requisitos" description="" processArea="Gerência de Requisitos" maturityLevel="Nível G">
+      <evaluates description="O entendimento dos requisitos é obtido junto aos fornecedores de requisitos" genericPractice="Não informado." genericSubPractice="Não informado." specificPractice="GRE1">
+        <definesComplianceLevel name="Não atendido" description="Determina que o item avaliado não está em conformidade com o que é esperado pelo modelo, necessitando de revisão do processo." maxValue="0.45"/>
+        <definesComplianceLevel name="Atendido parcialmente" description="Determina que o item avaliado possui é atendido com ressalvas, necessitando de pequenos ajustes para estar aderente ao modelo." minValue="0.46" maxValue="0.75"/>
+        <definesComplianceLevel name="Totalmente atendido" description="Determina que o item avaliado está totalmente atendido, sem necessidade de ajustes." minValue="0.76" maxValue="1.0"/>
+      </evaluates>
+    </organizes>
+  </performSubjectiveEvaluation>
+</asmnt:ExecutedAssessment>

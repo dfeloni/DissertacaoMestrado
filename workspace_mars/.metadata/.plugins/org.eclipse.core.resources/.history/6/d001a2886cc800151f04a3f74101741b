@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct:Phase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:struct="platform:/resource/StructureAndBehaviorModel/model" name="Iniciação do projeto" description="Fase do processo responsável pela coleta inicial dos requisitos e definição do escopo do projeto.">
+  <defines name="Definir de escopo do projeto" description="Realizar reuniões e entrevistas com os fornecedores de requisitos para coletar as necessidades do usuários e sugerir possibilidades de emplementação nos produtos de software da empresa." objective="Coletar os requisitos de usuário para levantamento dos requisitos de sistema a serem desenvolvidos.">
+    <executes description="1 - Agendar entrevista com usuários" number="1" complementaryDescription="Nesta atividade será agendada uma reunião para realizar a coleta dos requisitos com os fornecedores/usuários."/>
+    <executes description="2 - Documentar resultado da reunião e obter o aceite dos fornecedores em relação às definições iniciais do escopo do projeto." number="2"/>
+    <executes description="3 - Obter aprovação do documento de declaração de escopo elaborado." number="3" complementaryDescription="O documento de declaração de escopo elaborado deverá passar por aprovação por parte dos fornecedores de requisitos, indicando o aceito das definições realizadas para o projeto. A aprovação pode ser obtida por meio de um e-mail com o documento de declaração de escopo em anexo, ou o documento assinado por uma representante dos fornecedores de requisitos."/>
+    <input name="(INPUT) Documento de levantamento de requisitos" description="Documento utilizado para descrever os requisitos de usuário extraídos dos fornecedores de requisitos em reuniões do projeto." objective="Documentar os requisitos coletados na reunião inicial de definição do escopo do projeto." url="Não informado." fileName="GRE_Levantamento_Requisitos_#&lt;nro_projeto>.docx" template="Não informado." evidenceType="DIRECT_EVIDENCE">
+      <createdOn name="Microsoft Word" version="Office 365" url="https://www.microsoft.com/pt-br/" toolType="THIRD_PARTY"/>
+    </input>
+    <output name="(OUTPUT) Declaração de escopo do projeto" description="Detalhamento em requisitos de sistema para iniciar a criação dos requisitos para as equipes de desenvolvimento e testes." objective="Detalhar os requisitos de usuário para dar início ao processo de análise e modelagem de sistemas." url="Não informado." fileName="GRE_Declaracao_Escopo_#&lt;nro_projeto>.docx" template="Não informado." workProductType="OUTPUT" evidenceType="DIRECT_EVIDENCE">
+      <createdOn name="Microsoft Word" version="Office 365" url="https://www.microsoft.com/pt-br/" toolType="THIRD_PARTY"/>
+    </output>
+    <performedBy name="Analista de Requisitos" objective="Coletar, documentar, atualizar, modelar os requisitos de usuários dos produtos de software da empresa." requirements="Conhecimentos em análise de sistemas, modelagem UML e lógica de programação."/>
+  </defines>
+</struct:Phase>

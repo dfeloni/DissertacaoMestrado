@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct:Phase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:struct="platform:/resource/StructureAndBehaviorModel/model" name="Monitoramento do projeto" description="Fase do processo responsável pelo acompanhamento do desenvolvimento dos requisitos criados na fase de execução do processo de GRE e acompanhar as solicitações de mudança que surgem ao longo do projeto por parte do fornecedor de requisitos.">
+  <defines name="Registrar solicitação de mudança" description="Nesta atividade o analista de requisitos deve registrar a solicitação de mudança e notificar o gerente do projeto a possibilidade de replanejamento do projeto." objective="Registrar em ferramenta de controle do projeto a inclusão de uma solicitação de mudança.">
+    <executes description="1 - Registrar solicitação de mundaça" number="1" complementaryDescription=""/>
+    <executes description="2 - Notificar o gerente de projeto que existem solicitações de mudança para serem analisadas e adicionadas ao escopo do projeto." number="2"/>
+    <input name="(INPUT) Notificação do fornecedor de requisitos" description="Não informado." objective="Não informado." url="Não informado." fileName="Não informado." template="Não informado." evidenceType="OPTIONAL">
+      <createdOn name="Microsoft Word" version="Office 365" url="https://www.microsoft.com/pt-br/" toolType="THIRD_PARTY"/>
+    </input>
+    <output name="(OUTPUT) Declaração de escopo do projeto" description="Detalhamento em requisitos de sistema para iniciar a criação dos requisitos para as equipes de desenvolvimento e testes." objective="Detalhar os requisitos de usuário para dar início ao processo de análise e modelagem de sistemas." url="Não informado." fileName="GRE_Declaracao_Escopo_#&lt;nro_projeto>.docx" template="Não informado." workProductType="OUTPUT" evidenceType="DIRECT_EVIDENCE">
+      <createdOn name="Microsoft Word" version="Office 365" url="https://www.microsoft.com/pt-br/" toolType="THIRD_PARTY"/>
+    </output>
+    <performedBy name="Analista de Requisitos" objective="Coletar, documentar, atualizar, modelar os requisitos de usuários dos produtos de software da empresa." requirements="Conhecimentos em análise de sistemas, modelagem UML e lógica de programação."/>
+  </defines>
+</struct:Phase>

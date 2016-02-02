@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated improvementModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="improvement.presentation.ImprovementModelWizardID"
+            name="%_UI_ImprovementModelWizard_label"
+            class="improvement.presentation.ImprovementModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ImprovementModelFile.gif">
+         <description>%_UI_ImprovementModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated improvementModel -->
+      <editor
+            id="improvement.presentation.ImprovementEditorID"
+            name="%_UI_ImprovementEditor_label"
+            icon="icons/full/obj16/ImprovementModelFile.gif"
+            extensions="improvement"
+            class="improvement.presentation.ImprovementEditor"
+            contributorClass="improvement.presentation.ImprovementActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

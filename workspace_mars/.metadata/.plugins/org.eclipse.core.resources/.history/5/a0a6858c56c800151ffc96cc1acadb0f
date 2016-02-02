@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:struct="platform:/resource/StructureAndBehaviorModel/model" name="Realizar levantamento dos requisitos" description="Nesta atividade será realizado pelo analista de requisitos o levantamento dos requisitos de usuário definidos pelo cliente." objective="Coletar os requisitos de usuário para o desenvolvimento do produto de software, realizar manutenção ou evolução de funcionalidades existentes."/>

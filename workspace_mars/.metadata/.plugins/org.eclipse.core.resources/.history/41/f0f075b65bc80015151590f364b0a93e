@@ -1,0 +1,321 @@
+/**
+ */
+package structureAndBehavior.impl;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import structureAndBehavior.*;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class StructureAndBehaviorFactoryImpl extends EFactoryImpl implements StructureAndBehaviorFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static StructureAndBehaviorFactory init() {
+		try {
+			StructureAndBehaviorFactory theStructureAndBehaviorFactory = (StructureAndBehaviorFactory)EPackage.Registry.INSTANCE.getEFactory(StructureAndBehaviorPackage.eNS_URI);
+			if (theStructureAndBehaviorFactory != null) {
+				return theStructureAndBehaviorFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new StructureAndBehaviorFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StructureAndBehaviorFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case StructureAndBehaviorPackage.ELEMENT: return createElement();
+			case StructureAndBehaviorPackage.ACTIVITY: return createActivity();
+			case StructureAndBehaviorPackage.WORK_PRODUCT: return createWorkProduct();
+			case StructureAndBehaviorPackage.TOOL: return createTool();
+			case StructureAndBehaviorPackage.TASK: return createTask();
+			case StructureAndBehaviorPackage.ROLE: return createRole();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case StructureAndBehaviorPackage.INSTANCE_TYPE:
+				return createInstanceTypeFromString(eDataType, initialValue);
+			case StructureAndBehaviorPackage.ACTIVITY_TYPE:
+				return createActivityTypeFromString(eDataType, initialValue);
+			case StructureAndBehaviorPackage.WORK_PRODUCT_TYPE:
+				return createWorkProductTypeFromString(eDataType, initialValue);
+			case StructureAndBehaviorPackage.TOOL_TYPE:
+				return createToolTypeFromString(eDataType, initialValue);
+			case StructureAndBehaviorPackage.ROLE_TYPE:
+				return createRoleTypeFromString(eDataType, initialValue);
+			case StructureAndBehaviorPackage.EVIDENCE_TYPE:
+				return createEvidenceTypeFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case StructureAndBehaviorPackage.INSTANCE_TYPE:
+				return convertInstanceTypeToString(eDataType, instanceValue);
+			case StructureAndBehaviorPackage.ACTIVITY_TYPE:
+				return convertActivityTypeToString(eDataType, instanceValue);
+			case StructureAndBehaviorPackage.WORK_PRODUCT_TYPE:
+				return convertWorkProductTypeToString(eDataType, instanceValue);
+			case StructureAndBehaviorPackage.TOOL_TYPE:
+				return convertToolTypeToString(eDataType, instanceValue);
+			case StructureAndBehaviorPackage.ROLE_TYPE:
+				return convertRoleTypeToString(eDataType, instanceValue);
+			case StructureAndBehaviorPackage.EVIDENCE_TYPE:
+				return convertEvidenceTypeToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Element createElement() {
+		ElementImpl element = new ElementImpl();
+		return element;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Activity createActivity() {
+		ActivityImpl activity = new ActivityImpl();
+		return activity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkProduct createWorkProduct() {
+		WorkProductImpl workProduct = new WorkProductImpl();
+		return workProduct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Tool createTool() {
+		ToolImpl tool = new ToolImpl();
+		return tool;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Task createTask() {
+		TaskImpl task = new TaskImpl();
+		return task;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Role createRole() {
+		RoleImpl role = new RoleImpl();
+		return role;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstanceType createInstanceTypeFromString(EDataType eDataType, String initialValue) {
+		InstanceType result = InstanceType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertInstanceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ActivityType createActivityTypeFromString(EDataType eDataType, String initialValue) {
+		ActivityType result = ActivityType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertActivityTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkProductType createWorkProductTypeFromString(EDataType eDataType, String initialValue) {
+		WorkProductType result = WorkProductType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertWorkProductTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ToolType createToolTypeFromString(EDataType eDataType, String initialValue) {
+		ToolType result = ToolType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertToolTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RoleType createRoleTypeFromString(EDataType eDataType, String initialValue) {
+		RoleType result = RoleType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertRoleTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EvidenceType createEvidenceTypeFromString(EDataType eDataType, String initialValue) {
+		EvidenceType result = EvidenceType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertEvidenceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StructureAndBehaviorPackage getStructureAndBehaviorPackage() {
+		return (StructureAndBehaviorPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static StructureAndBehaviorPackage getPackage() {
+		return StructureAndBehaviorPackage.eINSTANCE;
+	}
+
+} //StructureAndBehaviorFactoryImpl

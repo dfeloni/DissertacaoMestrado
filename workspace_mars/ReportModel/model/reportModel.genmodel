@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ReportModel/src" modelPluginID="ReportModel" modelName="ReportModel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>reportModel.ecore</foreignModel>
+  <genPackages prefix="Report" disposableProviderFactory="true" ecorePackage="reportModel.ecore#/">
+    <genClasses ecoreClass="reportModel.ecore#//Report">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/evaluationType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/maturityModel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/maturityLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/processArea"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//Report/processInstance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference reportModel.ecore#//Report/detailedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="reportModel.ecore#//ReportItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/complianceItemEvaluated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/question"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/userAnswer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/complianceLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/itemDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/evaluationDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute reportModel.ecore#//ReportItem/evaluationResult"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prc:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:prc="platform:/resource/ProcessModel/model" name="Processo Gerência de Requisitos - MPS.Br - Nível G" purpose="O objetivo deste processo consiste em definir uma estrutura de trabalho e gestão dos requisitos dos produtos de software produzidos pela empresa." processType="PROCESS_INSTANCE">
+  <has name="Iniciação" description="Fase do processo responsável pela coleta inicial dos requisitos e definição do escopo do projeto." executionOrder="1"/>
+  <has name="Execução" description="Fase do processo em que os requisitos definidos na declaração de escopo do projeto são devidamente analisados e convertidos em requisitos de sistema para que sejam implementados pelas equipes de desenvolvimento da empresa." executionOrder="2"/>
+  <has name="Monitoramento" description="Fase do processo responsável pelo acompanhamento do desenvolvimento dos requisitos criados na fase de execução do processo de GRE e acompanhar as solicitações de mudança que surgem ao longo do projeto por parte do fornecedor de requisitos." executionOrder="3"/>
+  <has name="Encerramento" description="Nesta fase as atividades relacionadas ao projeto que está sendo finalizado são devidamente encerradas e os analistas de requisitos são liberados para alocação em outros projetos." executionOrder="4"/>
+  <follows href="ProjetoMPSBr.project#/"/>
+</prc:Process>

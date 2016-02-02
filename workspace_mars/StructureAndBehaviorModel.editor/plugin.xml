@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated structureAndBehavior -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="structureAndBehavior.presentation.StructureAndBehaviorModelWizardID"
+            name="%_UI_StructureAndBehaviorModelWizard_label"
+            class="structureAndBehavior.presentation.StructureAndBehaviorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StructureAndBehaviorModelFile.gif">
+         <description>%_UI_StructureAndBehaviorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated structureAndBehavior -->
+      <editor
+            id="structureAndBehavior.presentation.StructureAndBehaviorEditorID"
+            name="%_UI_StructureAndBehaviorEditor_label"
+            icon="icons/full/obj16/StructureAndBehaviorModelFile.gif"
+            extensions="structureandbehavior"
+            class="structureAndBehavior.presentation.StructureAndBehaviorEditor"
+            contributorClass="structureAndBehavior.presentation.StructureAndBehaviorActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,1276 @@
+/**
+ */
+package structureAndBehavior;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see structureAndBehavior.StructureAndBehaviorFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface StructureAndBehaviorPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "structureAndBehavior";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "platform:/resource/StructureAndBehaviorModel/model";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "struct";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	StructureAndBehaviorPackage eINSTANCE = structureAndBehavior.impl.StructureAndBehaviorPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.ElementImpl <em>Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.ElementImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getElement()
+	 * @generated
+	 */
+	int ELEMENT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__DESCRIPTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Objective</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__OBJECTIVE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__INSTANCE_TYPE = 3;
+
+	/**
+	 * The number of structural features of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.ActivityImpl <em>Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.ActivityImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getActivity()
+	 * @generated
+	 */
+	int ACTIVITY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__NAME = ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DESCRIPTION = ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Objective</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__OBJECTIVE = ELEMENT__OBJECTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__INSTANCE_TYPE = ELEMENT__INSTANCE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Activity Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__ACTIVITY_TYPE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Executes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__EXECUTES = ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Input</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__INPUT = ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Output</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__OUTPUT = ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Performed By</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__PERFORMED_BY = ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.WorkProductImpl <em>Work Product</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.WorkProductImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getWorkProduct()
+	 * @generated
+	 */
+	int WORK_PRODUCT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__NAME = ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__DESCRIPTION = ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Objective</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__OBJECTIVE = ELEMENT__OBJECTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__INSTANCE_TYPE = ELEMENT__INSTANCE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__URL = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>File Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__FILE_NAME = ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Template</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__TEMPLATE = ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Work Product Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__WORK_PRODUCT_TYPE = ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Created On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT__CREATED_ON = ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Work Product</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Work Product</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_PRODUCT_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.ToolImpl <em>Tool</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.ToolImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getTool()
+	 * @generated
+	 */
+	int TOOL = 3;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL__VERSION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL__URL = 2;
+
+	/**
+	 * The feature id for the '<em><b>Tool Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL__TOOL_TYPE = 3;
+
+	/**
+	 * The number of structural features of the '<em>Tool</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Tool</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.TaskImpl <em>Task</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.TaskImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getTask()
+	 * @generated
+	 */
+	int TASK = 4;
+
+	/**
+	 * The feature id for the '<em><b>Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK__NUMBER = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK__DESCRIPTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Complementary Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK__COMPLEMENTARY_DESCRIPTION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Task</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Task</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TASK_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.impl.RoleImpl <em>Role</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.impl.RoleImpl
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getRole()
+	 * @generated
+	 */
+	int ROLE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__NAME = ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__DESCRIPTION = ELEMENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Objective</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__OBJECTIVE = ELEMENT__OBJECTIVE;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__INSTANCE_TYPE = ELEMENT__INSTANCE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Requirements</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__REQUIREMENTS = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Role Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE__ROLE_TYPE = ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.InstanceType <em>Instance Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.InstanceType
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getInstanceType()
+	 * @generated
+	 */
+	int INSTANCE_TYPE = 6;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.ActivityType <em>Activity Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.ActivityType
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getActivityType()
+	 * @generated
+	 */
+	int ACTIVITY_TYPE = 7;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.WorkProductType <em>Work Product Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.WorkProductType
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getWorkProductType()
+	 * @generated
+	 */
+	int WORK_PRODUCT_TYPE = 8;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.ToolType <em>Tool Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.ToolType
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getToolType()
+	 * @generated
+	 */
+	int TOOL_TYPE = 9;
+
+	/**
+	 * The meta object id for the '{@link structureAndBehavior.RoleType <em>Role Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see structureAndBehavior.RoleType
+	 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getRoleType()
+	 * @generated
+	 */
+	int ROLE_TYPE = 10;
+
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.Element <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Element</em>'.
+	 * @see structureAndBehavior.Element
+	 * @generated
+	 */
+	EClass getElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Element#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see structureAndBehavior.Element#getName()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Element#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see structureAndBehavior.Element#getDescription()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Element#getObjective <em>Objective</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Objective</em>'.
+	 * @see structureAndBehavior.Element#getObjective()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_Objective();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Element#getInstanceType <em>Instance Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Type</em>'.
+	 * @see structureAndBehavior.Element#getInstanceType()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_InstanceType();
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.Activity <em>Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Activity</em>'.
+	 * @see structureAndBehavior.Activity
+	 * @generated
+	 */
+	EClass getActivity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Activity#getActivityType <em>Activity Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Activity Type</em>'.
+	 * @see structureAndBehavior.Activity#getActivityType()
+	 * @see #getActivity()
+	 * @generated
+	 */
+	EAttribute getActivity_ActivityType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link structureAndBehavior.Activity#getExecutes <em>Executes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Executes</em>'.
+	 * @see structureAndBehavior.Activity#getExecutes()
+	 * @see #getActivity()
+	 * @generated
+	 */
+	EReference getActivity_Executes();
+
+	/**
+	 * Returns the meta object for the reference list '{@link structureAndBehavior.Activity#getInput <em>Input</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Input</em>'.
+	 * @see structureAndBehavior.Activity#getInput()
+	 * @see #getActivity()
+	 * @generated
+	 */
+	EReference getActivity_Input();
+
+	/**
+	 * Returns the meta object for the reference list '{@link structureAndBehavior.Activity#getOutput <em>Output</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Output</em>'.
+	 * @see structureAndBehavior.Activity#getOutput()
+	 * @see #getActivity()
+	 * @generated
+	 */
+	EReference getActivity_Output();
+
+	/**
+	 * Returns the meta object for the reference list '{@link structureAndBehavior.Activity#getPerformedBy <em>Performed By</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Performed By</em>'.
+	 * @see structureAndBehavior.Activity#getPerformedBy()
+	 * @see #getActivity()
+	 * @generated
+	 */
+	EReference getActivity_PerformedBy();
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.WorkProduct <em>Work Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Work Product</em>'.
+	 * @see structureAndBehavior.WorkProduct
+	 * @generated
+	 */
+	EClass getWorkProduct();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.WorkProduct#getUrl <em>Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see structureAndBehavior.WorkProduct#getUrl()
+	 * @see #getWorkProduct()
+	 * @generated
+	 */
+	EAttribute getWorkProduct_Url();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.WorkProduct#getFileName <em>File Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>File Name</em>'.
+	 * @see structureAndBehavior.WorkProduct#getFileName()
+	 * @see #getWorkProduct()
+	 * @generated
+	 */
+	EAttribute getWorkProduct_FileName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.WorkProduct#getTemplate <em>Template</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Template</em>'.
+	 * @see structureAndBehavior.WorkProduct#getTemplate()
+	 * @see #getWorkProduct()
+	 * @generated
+	 */
+	EAttribute getWorkProduct_Template();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.WorkProduct#getWorkProductType <em>Work Product Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Work Product Type</em>'.
+	 * @see structureAndBehavior.WorkProduct#getWorkProductType()
+	 * @see #getWorkProduct()
+	 * @generated
+	 */
+	EAttribute getWorkProduct_WorkProductType();
+
+	/**
+	 * Returns the meta object for the reference list '{@link structureAndBehavior.WorkProduct#getCreatedOn <em>Created On</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Created On</em>'.
+	 * @see structureAndBehavior.WorkProduct#getCreatedOn()
+	 * @see #getWorkProduct()
+	 * @generated
+	 */
+	EReference getWorkProduct_CreatedOn();
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.Tool <em>Tool</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Tool</em>'.
+	 * @see structureAndBehavior.Tool
+	 * @generated
+	 */
+	EClass getTool();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Tool#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see structureAndBehavior.Tool#getName()
+	 * @see #getTool()
+	 * @generated
+	 */
+	EAttribute getTool_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Tool#getVersion <em>Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version</em>'.
+	 * @see structureAndBehavior.Tool#getVersion()
+	 * @see #getTool()
+	 * @generated
+	 */
+	EAttribute getTool_Version();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Tool#getUrl <em>Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see structureAndBehavior.Tool#getUrl()
+	 * @see #getTool()
+	 * @generated
+	 */
+	EAttribute getTool_Url();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Tool#getToolType <em>Tool Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tool Type</em>'.
+	 * @see structureAndBehavior.Tool#getToolType()
+	 * @see #getTool()
+	 * @generated
+	 */
+	EAttribute getTool_ToolType();
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.Task <em>Task</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Task</em>'.
+	 * @see structureAndBehavior.Task
+	 * @generated
+	 */
+	EClass getTask();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Task#getNumber <em>Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Number</em>'.
+	 * @see structureAndBehavior.Task#getNumber()
+	 * @see #getTask()
+	 * @generated
+	 */
+	EAttribute getTask_Number();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Task#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see structureAndBehavior.Task#getDescription()
+	 * @see #getTask()
+	 * @generated
+	 */
+	EAttribute getTask_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Task#getComplementaryDescription <em>Complementary Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Complementary Description</em>'.
+	 * @see structureAndBehavior.Task#getComplementaryDescription()
+	 * @see #getTask()
+	 * @generated
+	 */
+	EAttribute getTask_ComplementaryDescription();
+
+	/**
+	 * Returns the meta object for class '{@link structureAndBehavior.Role <em>Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Role</em>'.
+	 * @see structureAndBehavior.Role
+	 * @generated
+	 */
+	EClass getRole();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Role#getRequirements <em>Requirements</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Requirements</em>'.
+	 * @see structureAndBehavior.Role#getRequirements()
+	 * @see #getRole()
+	 * @generated
+	 */
+	EAttribute getRole_Requirements();
+
+	/**
+	 * Returns the meta object for the attribute '{@link structureAndBehavior.Role#getRoleType <em>Role Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Role Type</em>'.
+	 * @see structureAndBehavior.Role#getRoleType()
+	 * @see #getRole()
+	 * @generated
+	 */
+	EAttribute getRole_RoleType();
+
+	/**
+	 * Returns the meta object for enum '{@link structureAndBehavior.InstanceType <em>Instance Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Instance Type</em>'.
+	 * @see structureAndBehavior.InstanceType
+	 * @generated
+	 */
+	EEnum getInstanceType();
+
+	/**
+	 * Returns the meta object for enum '{@link structureAndBehavior.ActivityType <em>Activity Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Activity Type</em>'.
+	 * @see structureAndBehavior.ActivityType
+	 * @generated
+	 */
+	EEnum getActivityType();
+
+	/**
+	 * Returns the meta object for enum '{@link structureAndBehavior.WorkProductType <em>Work Product Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Work Product Type</em>'.
+	 * @see structureAndBehavior.WorkProductType
+	 * @generated
+	 */
+	EEnum getWorkProductType();
+
+	/**
+	 * Returns the meta object for enum '{@link structureAndBehavior.ToolType <em>Tool Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Tool Type</em>'.
+	 * @see structureAndBehavior.ToolType
+	 * @generated
+	 */
+	EEnum getToolType();
+
+	/**
+	 * Returns the meta object for enum '{@link structureAndBehavior.RoleType <em>Role Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Role Type</em>'.
+	 * @see structureAndBehavior.RoleType
+	 * @generated
+	 */
+	EEnum getRoleType();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	StructureAndBehaviorFactory getStructureAndBehaviorFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.ElementImpl <em>Element</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.ElementImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getElement()
+		 * @generated
+		 */
+		EClass ELEMENT = eINSTANCE.getElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__NAME = eINSTANCE.getElement_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__DESCRIPTION = eINSTANCE.getElement_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Objective</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__OBJECTIVE = eINSTANCE.getElement_Objective();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__INSTANCE_TYPE = eINSTANCE.getElement_InstanceType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.ActivityImpl <em>Activity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.ActivityImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getActivity()
+		 * @generated
+		 */
+		EClass ACTIVITY = eINSTANCE.getActivity();
+
+		/**
+		 * The meta object literal for the '<em><b>Activity Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ACTIVITY__ACTIVITY_TYPE = eINSTANCE.getActivity_ActivityType();
+
+		/**
+		 * The meta object literal for the '<em><b>Executes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTIVITY__EXECUTES = eINSTANCE.getActivity_Executes();
+
+		/**
+		 * The meta object literal for the '<em><b>Input</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTIVITY__INPUT = eINSTANCE.getActivity_Input();
+
+		/**
+		 * The meta object literal for the '<em><b>Output</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTIVITY__OUTPUT = eINSTANCE.getActivity_Output();
+
+		/**
+		 * The meta object literal for the '<em><b>Performed By</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTIVITY__PERFORMED_BY = eINSTANCE.getActivity_PerformedBy();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.WorkProductImpl <em>Work Product</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.WorkProductImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getWorkProduct()
+		 * @generated
+		 */
+		EClass WORK_PRODUCT = eINSTANCE.getWorkProduct();
+
+		/**
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PRODUCT__URL = eINSTANCE.getWorkProduct_Url();
+
+		/**
+		 * The meta object literal for the '<em><b>File Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PRODUCT__FILE_NAME = eINSTANCE.getWorkProduct_FileName();
+
+		/**
+		 * The meta object literal for the '<em><b>Template</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PRODUCT__TEMPLATE = eINSTANCE.getWorkProduct_Template();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Product Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORK_PRODUCT__WORK_PRODUCT_TYPE = eINSTANCE.getWorkProduct_WorkProductType();
+
+		/**
+		 * The meta object literal for the '<em><b>Created On</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_PRODUCT__CREATED_ON = eINSTANCE.getWorkProduct_CreatedOn();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.ToolImpl <em>Tool</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.ToolImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getTool()
+		 * @generated
+		 */
+		EClass TOOL = eINSTANCE.getTool();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOOL__NAME = eINSTANCE.getTool_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Version</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOOL__VERSION = eINSTANCE.getTool_Version();
+
+		/**
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOOL__URL = eINSTANCE.getTool_Url();
+
+		/**
+		 * The meta object literal for the '<em><b>Tool Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOOL__TOOL_TYPE = eINSTANCE.getTool_ToolType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.TaskImpl <em>Task</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.TaskImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getTask()
+		 * @generated
+		 */
+		EClass TASK = eINSTANCE.getTask();
+
+		/**
+		 * The meta object literal for the '<em><b>Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TASK__NUMBER = eINSTANCE.getTask_Number();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TASK__DESCRIPTION = eINSTANCE.getTask_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Complementary Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TASK__COMPLEMENTARY_DESCRIPTION = eINSTANCE.getTask_ComplementaryDescription();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.impl.RoleImpl <em>Role</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.impl.RoleImpl
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getRole()
+		 * @generated
+		 */
+		EClass ROLE = eINSTANCE.getRole();
+
+		/**
+		 * The meta object literal for the '<em><b>Requirements</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE__REQUIREMENTS = eINSTANCE.getRole_Requirements();
+
+		/**
+		 * The meta object literal for the '<em><b>Role Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE__ROLE_TYPE = eINSTANCE.getRole_RoleType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.InstanceType <em>Instance Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.InstanceType
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getInstanceType()
+		 * @generated
+		 */
+		EEnum INSTANCE_TYPE = eINSTANCE.getInstanceType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.ActivityType <em>Activity Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.ActivityType
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getActivityType()
+		 * @generated
+		 */
+		EEnum ACTIVITY_TYPE = eINSTANCE.getActivityType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.WorkProductType <em>Work Product Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.WorkProductType
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getWorkProductType()
+		 * @generated
+		 */
+		EEnum WORK_PRODUCT_TYPE = eINSTANCE.getWorkProductType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.ToolType <em>Tool Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.ToolType
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getToolType()
+		 * @generated
+		 */
+		EEnum TOOL_TYPE = eINSTANCE.getToolType();
+
+		/**
+		 * The meta object literal for the '{@link structureAndBehavior.RoleType <em>Role Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see structureAndBehavior.RoleType
+		 * @see structureAndBehavior.impl.StructureAndBehaviorPackageImpl#getRoleType()
+		 * @generated
+		 */
+		EEnum ROLE_TYPE = eINSTANCE.getRoleType();
+
+	}
+
+} //StructureAndBehaviorPackage

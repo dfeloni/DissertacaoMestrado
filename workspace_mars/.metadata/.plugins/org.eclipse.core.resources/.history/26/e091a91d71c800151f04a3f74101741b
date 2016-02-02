@@ -1,0 +1,196 @@
+/**
+ */
+package assessment;
+
+import java.util.Date;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Executed Assessment</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link assessment.ExecutedAssessment#getName <em>Name</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getDescription <em>Description</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getDate <em>Date</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getMaturityModel <em>Maturity Model</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getProcess <em>Process</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getPerformSubjectiveEvaluation <em>Perform Subjective Evaluation</em>}</li>
+ *   <li>{@link assessment.ExecutedAssessment#getPerformObjectiveEvaluation <em>Perform Objective Evaluation</em>}</li>
+ * </ul>
+ *
+ * @see assessment.AssessmentPackage#getExecutedAssessment()
+ * @model
+ * @generated
+ */
+public interface ExecutedAssessment extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link assessment.ExecutedAssessment#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_Description()
+	 * @model
+	 * @generated
+	 */
+	String getDescription();
+
+	/**
+	 * Sets the value of the '{@link assessment.ExecutedAssessment#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Date</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Date</em>' attribute.
+	 * @see #setDate(Date)
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_Date()
+	 * @model
+	 * @generated
+	 */
+	Date getDate();
+
+	/**
+	 * Sets the value of the '{@link assessment.ExecutedAssessment#getDate <em>Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Date</em>' attribute.
+	 * @see #getDate()
+	 * @generated
+	 */
+	void setDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Maturity Model</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Maturity Model</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Maturity Model</em>' attribute.
+	 * @see #setMaturityModel(String)
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_MaturityModel()
+	 * @model
+	 * @generated
+	 */
+	String getMaturityModel();
+
+	/**
+	 * Sets the value of the '{@link assessment.ExecutedAssessment#getMaturityModel <em>Maturity Model</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Maturity Model</em>' attribute.
+	 * @see #getMaturityModel()
+	 * @generated
+	 */
+	void setMaturityModel(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Process</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Process</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Process</em>' attribute.
+	 * @see #setProcess(String)
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_Process()
+	 * @model
+	 * @generated
+	 */
+	String getProcess();
+
+	/**
+	 * Sets the value of the '{@link assessment.ExecutedAssessment#getProcess <em>Process</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Process</em>' attribute.
+	 * @see #getProcess()
+	 * @generated
+	 */
+	void setProcess(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Perform Subjective Evaluation</b></em>' reference list.
+	 * The list contents are of type {@link assessment.SubjectiveAssessment}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Perform Subjective Evaluation</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Perform Subjective Evaluation</em>' reference list.
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_PerformSubjectiveEvaluation()
+	 * @model
+	 * @generated
+	 */
+	EList<SubjectiveAssessment> getPerformSubjectiveEvaluation();
+
+	/**
+	 * Returns the value of the '<em><b>Perform Objective Evaluation</b></em>' reference list.
+	 * The list contents are of type {@link assessment.ObjectiveAssessment}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Perform Objective Evaluation</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Perform Objective Evaluation</em>' reference list.
+	 * @see assessment.AssessmentPackage#getExecutedAssessment_PerformObjectiveEvaluation()
+	 * @model
+	 * @generated
+	 */
+	EList<ObjectiveAssessment> getPerformObjectiveEvaluation();
+
+} // ExecutedAssessment

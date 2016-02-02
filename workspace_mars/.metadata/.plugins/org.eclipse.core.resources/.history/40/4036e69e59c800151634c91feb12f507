@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:struct="platform:/resource/StructureAndBehaviorModel/model" name="Coletar requisitos" description="Nessa atividade serão levantados os requisitos de usuário com os fornecedores de requisitos dos produtos de software desenvolvidos pela empresa." objective="Coletar os requisitos de usuário para realizar o levantamento de requisitos de sistema e disponibilizá-los para as equipes de desenvolvimento e testes."/>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rpt:Report xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:rpt="platform:/resource/ReportModel/model" evaluationType="Avaliação baseada em questionário" maturityModel="Melhoria de Processo de Software Brasileiro" maturityLevel="Nível G" processArea="Gerência de Requisitos" processInstance="Processo Gerência de Requisitos - MPS.Br - Nível G">
+  <detailedBy complianceItemEvaluated="O entendimento dos requisitos é obtido junto aos fornecedores de requisitos" question="" userAnswer="" complianceLevel="" itemDescription="" evaluationDescription="" evaluationResult=""/>
+</rpt:Report>

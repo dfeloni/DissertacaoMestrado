@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated processModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="process.presentation.ProcessModelWizardID"
+            name="%_UI_ProcessModelWizard_label"
+            class="process.presentation.ProcessModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ProcessModelFile.gif">
+         <description>%_UI_ProcessModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated processModel -->
+      <editor
+            id="process.presentation.ProcessEditorID"
+            name="%_UI_ProcessEditor_label"
+            icon="icons/full/obj16/ProcessModelFile.gif"
+            extensions="process"
+            class="process.presentation.ProcessEditor"
+            contributorClass="process.presentation.ProcessActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

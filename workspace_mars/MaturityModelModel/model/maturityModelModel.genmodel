@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/MaturityModelModel/src" modelPluginID="MaturityModelModel"
+    modelName="MaturityModelModel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>maturityModelModel.ecore</foreignModel>
+  <genPackages prefix="MaturityModel" disposableProviderFactory="true" ecorePackage="maturityModelModel.ecore#/">
+    <genClasses ecoreClass="maturityModelModel.ecore#//MaturityModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/releaseDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/acronym"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityModel/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//MaturityModel/organizes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//MaturityModel/evolvesInto"/>
+    </genClasses>
+    <genClasses ecoreClass="maturityModelModel.ecore#//ProcessArea">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//ProcessArea/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//ProcessArea/shortDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//ProcessArea/mainDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//ProcessArea/acronym"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//ProcessArea/defines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//ProcessArea/implements"/>
+    </genClasses>
+    <genClasses ecoreClass="maturityModelModel.ecore#//SpecificPractice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//SpecificPractice/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//SpecificPractice/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//SpecificPractice/acronym"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//SpecificPractice/complementaryDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="maturityModelModel.ecore#//MaturityLevel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityLevel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityLevel/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//MaturityLevel/acronym"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//MaturityLevel/evolvesInto"/>
+    </genClasses>
+    <genClasses ecoreClass="maturityModelModel.ecore#//GenericPractice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GenericPractice/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GenericPractice/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GenericPractice/acronym"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GenericPractice/complementaryDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maturityModelModel.ecore#//GenericPractice/divided"/>
+    </genClasses>
+    <genClasses ecoreClass="maturityModelModel.ecore#//GPSubPractice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GPSubPractice/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GPSubPractice/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maturityModelModel.ecore#//GPSubPractice/acronym"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

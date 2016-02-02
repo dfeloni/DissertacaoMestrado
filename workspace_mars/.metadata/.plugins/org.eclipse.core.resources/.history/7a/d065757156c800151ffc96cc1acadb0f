@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/StructureAndBehaviorModel/src" modelPluginID="StructureAndBehaviorModel"
+    modelName="StructureAndBehavior" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>structureAndBehaviorModel.ecore</foreignModel>
+  <genPackages prefix="StructureAndBehavior" disposableProviderFactory="true" ecorePackage="structureAndBehaviorModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="structureAndBehaviorModel.ecore#//InstanceType">
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//InstanceType/SUGGESTED"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//InstanceType/TEMPLATE"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//InstanceType/EXECUTED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="structureAndBehaviorModel.ecore#//ActivityType">
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//ActivityType/MANDATORY"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//ActivityType/SECUNDARY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="structureAndBehaviorModel.ecore#//WorkProductType">
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//WorkProductType/INDIRECT_EVIDENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//WorkProductType/DIRECT_EVIDENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//WorkProductType/OPTIONAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="structureAndBehaviorModel.ecore#//ToolType">
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//ToolType/OPEN_SOURCE"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//ToolType/THIRD_PARTY"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//ToolType/CUSTOM"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="structureAndBehaviorModel.ecore#//RoleType">
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//RoleType/PRIMARY"/>
+      <genEnumLiterals ecoreEnumLiteral="structureAndBehaviorModel.ecore#//RoleType/SECONDARY"/>
+    </genEnums>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Element/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Element/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Element/objective"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Element/instanceType"/>
+    </genClasses>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Activity/activityType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference structureAndBehaviorModel.ecore#//Activity/executes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference structureAndBehaviorModel.ecore#//Activity/input"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference structureAndBehaviorModel.ecore#//Activity/output"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference structureAndBehaviorModel.ecore#//Activity/performedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//WorkProduct">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//WorkProduct/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//WorkProduct/fileName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//WorkProduct/template"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//WorkProduct/workProductType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference structureAndBehaviorModel.ecore#//WorkProduct/createdOn"/>
+    </genClasses>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//Tool">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Tool/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Tool/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Tool/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Tool/toolType"/>
+    </genClasses>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Task/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Task/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Task/complementaryDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="structureAndBehaviorModel.ecore#//Role">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Role/requirements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute structureAndBehaviorModel.ecore#//Role/roleType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
